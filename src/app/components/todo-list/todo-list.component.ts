@@ -28,6 +28,7 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.todos$ = this.todoService.getTodos()
+
     this.observable$
     .pipe(
       map(value => value + ' test'),
@@ -47,4 +48,6 @@ export class TodoListComponent implements OnInit {
           })
     }
   }
+
+
 
